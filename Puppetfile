@@ -1,3 +1,6 @@
+# vi: set ft=ruby
+forge 'https://forgeapi.puppetlabs.com'
+
 # This file manages Puppet module dependencies.
 #
 # It works a lot like Bundler. We provide some core modules by
@@ -38,25 +41,14 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "brewcask",    "0.0.4"
-github "dnsmasq",     "2.0.1"
-github "foreman",     "1.2.0"
-github "gcc",         "2.2.0"
-github "git",         "2.7.1"
-github "go",          "2.1.0"
-github "homebrew",    "1.11.2"
-github "hub",         "1.3.0"
-github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.4"
-github "nodejs",      "4.0.0"
-github "openssl",     "1.0.0"
-github "phantomjs",   "2.3.0"
-github "pkgconfig",   "1.0.0"
-github "repository",  "2.3.0"
-github "ruby",        "8.1.7"
-github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",        "1.0.0"
-github "xquartz",     "1.2.1"
+# Windows support
+mod 'puppetlabs/inifile', '1.1.1'
+mod 'puppetlabs/reboot', '0.1.9'
+mod 'puppetlabs/registry', '1.0.3'
+mod 'puppetlabs/powershell', '1.0.4'
+mod 'puppetlabs-win_desktop_shortcut', '0.0.4'
+mod 'rismoney/chocolatey', '0.4.0'
+mod 'opentable/download_file', '1.1.0'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
